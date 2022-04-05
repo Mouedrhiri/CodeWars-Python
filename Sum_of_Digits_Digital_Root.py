@@ -12,3 +12,7 @@ def digital_root(n):
     while n >= 10:
         n = sum(int(i) for i in str(n))
     return n
+
+#OR : 
+def digital_root(n):
+    return n%9 or n and 9 
